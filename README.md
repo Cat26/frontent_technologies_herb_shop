@@ -8,6 +8,7 @@ JavaScript
 Link:
 ```
 [herb_site](https://cat26.github.io/frontent_technologies_herb_shop/main.html)
+
 ```
 Cel i zakres projektu:
 ```
