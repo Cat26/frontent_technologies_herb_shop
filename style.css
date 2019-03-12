@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.navbar{
+    margin-bottom: 0px  !important;
+}
+.row{
+     margin-right: 0px !important;
+     margin-left: 0px !important;
+}
+.main img{
+    width: 100%;
+}
+
+.main{
+    background: #e6d8c9;
+    font-size: 20px;
+}
+h1{
+    font-size: 56px !important;
+    background: #949046;
+    text-align: center;
+    font-family: 'Indie Flower', cursive !important;
+}
+
+.products-header, .product{
+    background: #d0c7c7;
+}
+.medicins{
+    background: #e6d8c9;
+}
+.products-header h1{
+    background: #b1b0a8;
+}
+.product img, .medicins img{
+    width: 100%;
+}
+
+.yerba-products img, .tea-products img{
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.yerba-products img:hover, .tea-products img:hover{
+    opacity: 0.7;
+}
+.medicin-products img{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.yerba, .tea, .medicin{
+    display: inline-block;
+    border: solid black;
+    margin-right: 5%;
+    margin-top: 2%;
+
+}
+.yerba:hover, .tea:hover, .medicin:hover{
+    box-shadow: 9px 8px 8px 3px #1c2024;
+}
+.yerba p, .tea p, .medicin p{
+    margin: 5px;
+    font-weight: bold;
+}
+
+.price{
+    display: inline-block;
+}
+
+.add-button{
+    float: right;
+    margin: 5px !important;
+    font-weight: bold !important;
+    background-color: black !important;
+    border-color: #EFF1FB !important;
+}
+
+.modal{
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /*enable scroll*/
+    background-color: rgba(0, 0, 0, 0.68);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#caption {
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+.modal img{
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+}
