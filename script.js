@@ -1,16 +1,24 @@
-let tea_products = document.querySelector(".tea-products");
-let tea_images = tea_products.querySelectorAll("img");
-
-
-function showDetails(){
-    let selected_div = this.parentElement;
-    let description = selected_div.querySelectorAll(".product-description");
-
-    description.forEach(desc => desc.style.display = "block");
-    selected_div.style.backgroundColor = "white";
-    selected_div.classList.toggle('description-img');
-    // this.style.width = "300px";
-    // this.style.height ="200px";
-}
-
-tea_images.forEach(image => image.addEventListener("click", showDetails));
+$(document).ready(function () {
+    $(".show-details").click(function () {
+        var selected_div = $(this).parent();
+        selected_div.find(".product-description").show(1500);
+        selected_div.find(".close").show(1500);
+        selected_div.find("img").css({
+            "width": "300px",
+            "height": "250px",
+            "cursor": "default"
+        });
+        selected_div.css("background-color", "white");
+    });
+    $(".close").click(function () {
+        var selected_div = $(this).parent();
+        selected_div.find(".product-description").hide();
+        selected_div.find(".close").hide();
+        selected_div.find("img").css({
+            "width": "200px",
+            "height": "150px",
+            "cursor": "pointer"
+        });
+        selected_div.css("background-color", "#d0c7c7");
+    });
+});

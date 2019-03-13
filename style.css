@@ -39,15 +39,9 @@ h1{
     width: 200px;
     height: 150px;
     cursor: pointer;
-    transition: 2s;
+    transition: 4s;
 }
-.description-img img{
-    width: 300px;
-    height: 250px;
-}
-.description-img img:hover{
-    opacity: 1 !important;
-}
+
 .yerba-products img:hover, .tea-products img:hover{
     opacity: 0.7;
 }
@@ -55,6 +49,7 @@ h1{
     width: 150px;
     height: 150px;
     cursor: pointer;
+    transition: 4s;
 }
 .yerba, .tea, .medicin{
     display: inline-block;
@@ -87,5 +82,7 @@ h1{
 }
 .close{
     font-size: 51px !important;
+    display: none;
 }
+
 
