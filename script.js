@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $(".show-details").click(function () {
         var selected_div = $(this).parent();
-        selected_div.find(".product-description").show(1500);
-        selected_div.find(".close").show(1500);
+        selected_div.find(".product-description").show(500);
+        selected_div.find(".close").show(500);
         selected_div.find("img").css({
             "width": "300px",
             "height": "250px",
