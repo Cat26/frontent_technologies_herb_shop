@@ -10,7 +10,7 @@
     <title>Herb shop</title>
 </head>
 <body>
-<div class="container-fluid">
+<div class="menubar-content">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -41,6 +41,8 @@
             </ul>
         </div>
     </nav>
+</div>
+<div class="container-fluid">
     <div class="row main">
         <div class="col-md-6">
             <img src="images/bamboo-bamboo-whisk-board-461428.jpg">
@@ -230,34 +232,61 @@
         <div class="row footer">
             <div class="col-md-4 col-md-offset-1">
                 <h2 id="contact-form">ZAMÓW</h2>
-                <form action="/action_page.php">
-                    <label for="fname">Imie</label>
-                    <input type="text" id="fname" name="firstname" placeholder="twoje imię..">
-
-                    <label for="lname">Nazwisko</label>
-                    <input type="text" id="lname" name="lastname" placeholder="twoje nazwisko..">
-
-                    <label for="lemail">Email</label>
-                    <input type="text" id="lemail" name="email" placeholder="twój email..">
-
-                    <label for="lstreet">Ulica</label>
-                    <input type="text" id="lstreet" name="street" placeholder="ulica wraz z numerem domu/mieszkania..">
-
-                    <label for="lcode">Kod pocztowy</label>
-                    <input type="text" id="lcode" name="code" placeholder="twój kod pocztowy..">
-
-                    <label for="country">Kraj</label>
-                    <select id="country" name="country">
-                        <option value="australia">Polska</option>
-                        <option value="australia">Szwecja</option>
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
-
-                    <label for="subject">Zamówienie</label>
-                    <textarea id="subject" name="subject" placeholder="koszyk jest pusty!! :(" style="height:200px"></textarea>
-
+                <form>
+                    <div>
+                        <label for="fname">Imie</label><i class="glyphicon glyphicon-info-sign info"></i>
+                        <div class="alert alert-info">
+                            <div class="info-text"><strong>Info!</strong> Podaj swoje pełne imię (conajmniej 3 litery)</div>
+                            <div class="close-info"><span>×</span></div>
+                        </div>
+                        <input type="text" id="fname" name="firstname" placeholder="twoje imię.." pattern="[A-Za-z]{3,}" required>
+                    </div>
+                    <div>
+                        <label for="lname">Nazwisko</label><i class="glyphicon glyphicon-info-sign info"></i>
+                        <div class="alert alert-info">
+                            <div class="info-text"><strong>Info!</strong> Podaj swoje pełne naziwko Nazwisko (conajmniej 3 litery)</div>
+                            <div class="close-info"><span>×</span></div>
+                        </div>
+                        <input type="text" id="lname" name="lastname" placeholder="twoje nazwisko.." pattern="[A-Za-z]{3,}" required>
+                    </div>
+                    <div>
+                        <label for="lemail">Email</label><i class="glyphicon glyphicon-info-sign info"></i>
+                        <div class="alert alert-info">
+                            <div class="info-text"><strong>Info!</strong> Podaj swój email w formacie Smith@example.com</div>
+                            <div class="close-info"><span>×</span></div>
+                        </div>
+                        <input type="email" id="lemail" name="email" placeholder="twój email.." required>
+                    </div>
+                    <div>
+                        <label for="lstreet">Ulica</label><i class="glyphicon glyphicon-info-sign info"></i>
+                        <div class="alert alert-info">
+                            <div class="info-text"><strong>Info!</strong> Podaj ulice nr domu/nr mieszkania format "Liliowa 12/4"</div>
+                            <div class="close-info"><span>×</span></div>
+                        </div>
+                        <input type="text" id="lstreet" name="street" placeholder="ulica wraz z numerem domu/mieszkania.." pattern="[A-Za-z]*\s*[A-Za-z]+\s*\d+[a-zA-Z]*/\d+" required>
+                    </div>
+                    <div>
+                        <label for="lcode">Kod pocztowy</label><i class="glyphicon glyphicon-info-sign info"></i>
+                        <div class="alert alert-info">
+                            <div class="info-text"><strong>Info!</strong> Podaj kod pocztowy w formacie 11-111</div>
+                            <div class="close-info"><span>×</span></div>
+                        </div>
+                        <input type="text" id="lcode" name="code" placeholder="twój kod pocztowy.." pattern="[0-9]{2}-[0-9]{3}" required>
+                    </div>
+                    <div>
+                        <label for="country">Kraj</label><i class="glyphicon glyphicon-info-sign info"></i>
+                        <div class="alert alert-info">
+                            <div class="info-text"><strong>Info!</strong> Podaj kraj zamieszkania (conajmniej 3 litery)</div>
+                            <div class="close-info"><span>×</span></div>
+                        </div>
+                        <input type="text" id="country" name="country" placeholder="kraj..." pattern="[A-Za-z]{3,}" required>
+                    </div>
+                    <div>
+                        <label for="subject">Zamówienie</label>
+                        <textarea required readonly id="subject" name="subject" placeholder="koszyk jest pusty!! :(" style="height:200px"></textarea>
+                        <label for="comment">Komentarz</label>
+                        <textarea id="comment" name="comment" placeholder="dodaj komentarz do zamówienia" style="max-height: 50px"></textarea>
+                    </div>
                     <input type="submit" value="Submit">
                 </form>
             </div>

@@ -22,3 +22,15 @@ $(document).ready(function () {
         selected_div.css("background-color", "#d0c7c7");
     });
 });
+
+//zamówienie info
+$(document).ready(function () {
+    $(".info").click(function () {
+        var form_el = $(this).parent();
+        form_el.find(".alert").show(500);
+    });
+    $(".close-info").click(function () {
+       var form_el = $(this).parent();
+       form_el.hide();
+    });
+});

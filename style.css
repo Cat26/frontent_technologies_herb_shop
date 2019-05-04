@@ -88,7 +88,7 @@ h1{
     background: #222222;
     color: #9d9d9d;
 }
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -125,4 +125,29 @@ input[type=submit] {
 .footer-email p, .footer-phone p{
     padding-top: 12px;
 }
-
+.info{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.close-info{
+    width: 30%;
+    text-align: right;
+    padding-right: 5px;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.info-text{
+    width: 70%;
+    float: left;
+    padding-left: 5px;
+}
+.alert{
+    line-height: 40px;
+    height: 40px;
+    padding: 0 !important;
+    display: none;
+}
+.menubar-content{
+    height: 50px;
+}
