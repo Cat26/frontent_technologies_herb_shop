@@ -154,3 +154,28 @@ input[type=submit] {
 .menubar-content{
     height: 50px;
 }
+.products-basket{
+    background: #b7b862;
+    width: 200px;
+    position: fixed;
+    z-index: 3;
+    right: 0px;
+    border-radius: 20px 0px 0px 20px;
+    cursor: pointer;
+}
+.products-basket h3{
+    margin-left: 20px;
+}
+.products-basket li{
+    border-top: 2px solid black;
+    padding: 5px
+}
+.delete-button{
+    float: right;
+    height: 20px;
+    border: 0;
+    background: #333333;
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 0px;
+}

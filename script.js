@@ -44,17 +44,23 @@ $(document).ready(function () {
 });
 
 // dodaj do koszyka
-const itemList = document.querySelector(".basket");
 
 $(document).ready(function () {
     $(".add-button").click(function () {
         var selected_div = $(this).parent();
         var product = selected_div.find(".product-name");
         var product_name = product[0].innerText;
-        var new_li = document.createElement("LI");
-        var text_li = document.createTextNode(product_name);
-        new_li.appendChild(text_li);
-        itemList.appendChild(new_li);
+        var new_li = "<li>" + product_name + "<button class='delete-button'>-</button></li>"
 
+        $(".basket").append(new_li);
     });
-})
+});
+
+// usuń z koszyka
+
+$(document).ready(function () {
+    $(".basket").on("click", ".delete-button", function () {
+        var li_selected = $(this).parent();
+        li_selected[0].remove();
+    });
+});
