@@ -34,8 +34,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <span class="glyphicon glyphicon-shopping-cart"></span> Koszyk<span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li>Koszyk jest pusty dodaj produkty!</li>
+                    <ul class="dropdown-menu basket">
                     </ul>
                 </li>
             </ul>
@@ -74,7 +73,7 @@
                 <div class="tea">
                     <span class="close">×</span>
                     <img class="show-details" src="images/tea1.jpg">
-                    <p>Herbata z płatków bławatka</p>
+                    <p class="product-name">Herbata z płatków bławatka</p>
                     <p class="price"><span class="product-price">27</span>zł/kg</p>
                     <div class="product-description">
                         <p>Chaber bławatek wykazuje właściwości moczopędne, antybakteryjne, żółciopędne, przeciwgrzybiczne i przeciwzapalne.
@@ -85,7 +84,7 @@
                 <div class="tea">
                     <span class="close">×</span>
                     <img class="show-details" src="images/tea2.jpg">
-                    <p>Herbata zielona</p>
+                    <p class="product-name">Herbata zielona</p>
                     <p class="price">23zł/kg</p>
                     <div class="product-description">
                         <p>Międzynarodowe badania nad właściwościami zielonej herbaty wykazały jej antynowotworowe działanie. To zasługa m.in. bardzo silnych przeciwutleniaczy, które chronią DNA przed działaniem substancji kancerogennych i zmianami mogącymi prowadzić do rozwoju nowotworów. Dobrze udokumentowane jest zwłaszcza ich ochronne działanie przed rakiem skóry, wywoływanym głównie przez promieniowanie UV. Stwierdzono, że regularne picie zielonej herbaty wyraźnie zmniejsza prawdopodobieństwo zachorowania na ten nowotwór, a ponadto zapobiega poparzeniom słonecznym.</p>
@@ -95,7 +94,7 @@
                 <div class="tea">
                     <span class="close">×</span>
                     <img class="show-details" src="images/tea3.jpg">
-                    <p>Herbata z różą i pomarańczą</p>
+                    <p class="product-name">Herbata z różą i pomarańczą</p>
                     <p class="price">26zł/kg</p>
                     <div class="product-description">
                         <p>Owoce dizkiej róży oprócz dużej ilości witaminy C, zawierają garbniki, karotenoidy, kwasy organiczne, olejki eteryczne, cukry i pektyny. Są źródłem również witamin: A, B1, B2, E, K oraz kwasu foliowego, flawonoidów, kwasów organicznych, pektyn i garbników.</p>
@@ -105,28 +104,28 @@
                 <div class="tea">
                     <span class="close">×</span>
                     <img class="show-details" src="images/tea4.jpg">
-                    <p>Herbata czerwona</p>
+                    <p class="product-name">Herbata czerwona</p>
                     <p class="price">28zł/kg</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="tea">
                     <span class="close">×</span>
                     <img class="show-details" src="images/tea5.jpg">
-                    <p>Herbata z pokrzywy</p>
+                    <p class="product-name">Herbata z pokrzywy</p>
                     <p class="price">20zł/kg</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="tea">
                     <span class="close">×</span>
                     <img class="show-details" src="images/tea6.jpg">
-                    <p>Herbata czarna</p>
+                    <p class="product-name">Herbata czarna</p>
                     <p class="price">20zł/kg</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="tea">
                     <span class="close">×</span>
                     <img class="show-details" src="images/tea7.jpg">
-                    <p>Herbata owocowa</p>
+                    <p class="product-name">Herbata owocowa</p>
                     <p class="price">25zł/kg</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
@@ -134,26 +133,30 @@
             <h2>YERBA MATE:</h2>
             <div class="yerba-products">
                 <div class="yerba">
-                    <img src="images/yerba1.jpg">
-                    <p>Yerba Mate 220V</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/yerba1.jpg">
+                    <p class="product-name">Yerba Mate 220V</p>
                     <p class="price">40zł/kg</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="yerba">
-                    <img src="images/yerba2.jpg">
-                    <p>Yerba Mate Beduin</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/yerba2.jpg">
+                    <p class="product-name">Yerba Mate Beduin</p>
                     <p class="price">45zł/kg</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="yerba">
-                    <img src="images/yerba3.jpg">
-                    <p>Yerba Mate Atacama</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/yerba3.jpg">
+                    <p class="product-name">Yerba Mate Atacama</p>
                     <p class="price">40zł/kg</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="yerba">
-                    <img src="images/yerba_ananas.jpg">
-                    <p>Yerba Mate Ananas</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/yerba_ananas.jpg">
+                    <p class="product-name">Yerba Mate Ananas</p>
                     <p class="price">35zł/kg</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
@@ -165,57 +168,65 @@
             <h2 id="leki">LEKI ZIOŁOWE:</h2>
             <div class="medicin-products">
                 <div class="medicin">
-                    <img src="images/lek1.jpg">
-                    <p>Krpople z Owoców rokitnika</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/lek1.jpg">
+                    <p class="product-name">Krople z Owoców rokitnika</p>
                     <p>250ml</p>
                     <p class="price">40zł/sztuka</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="medicin">
-                    <img src="images/lek2.jpg">
-                    <p>Syrop z czerwonej koniczyny</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/lek2.jpg">
+                    <p class="product-name">Syrop z czerwonej koniczyny</p>
                     <p>200ml</p>
                     <p class="price">50zł/sztuka</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="medicin">
-                    <img src="images/lek3.jpg">
-                    <p>Płynny wyciąg z szyszek chmielu</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/lek3.jpg">
+                    <p class="product-name">Płynny wyciąg z szyszek chmielu</p>
                     <p>250ml</p>
                     <p class="price">60zł/sztuka</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="medicin">
-                    <img src="images/lek4.jpg">
-                    <p>Zielona herbata w tabletkach</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/lek4.jpg">
+                    <p class="product-name">Zielona herbata w tabletkach</p>
                     <p>70 tabletek</p>
                     <p class="price">60zł/sztuka</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="medicin">
-                    <img src="images/lek5.jpg">
-                    <p>Melisa</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/lek5.jpg">
+                    <p class="product-name">Melisa</p>
                     <p>200ml</p>
                     <p class="price">35zł/sztuka</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="medicin">
-                    <img src="images/lek6.jpg">
-                    <p>Witamina B12</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/lek6.jpg">
+                    <p class="product-name">Witamina B12</p>
                     <p>1000mg</p>
                     <p class="price">50zł/sztuka</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="medicin">
-                    <img src="images/lek7.jpg">
-                    <p>Wapń + Magnez+ Bor</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/lek7.jpg">
+                    <p class="product-name">Wapń + Magnez+ Bor</p>
                     <p>1000mg</p>
                     <p class="price">60zł/sztuka</p>
                     <button class="btn btn-primary add-button">+</button>
                 </div>
                 <div class="medicin">
-                    <img src="images/lek8.jpg">
-                    <p>Susz Konpny</p>
+                    <span class="close">×</span>
+                    <img class="show-details" src="images/lek8.jpg">
+                    <p class="product-name">Susz Konpny</p>
                     <p>500mg</p>
                     <p class="price">70zł/szuka</p>
                     <button class="btn btn-primary add-button">+</button>
@@ -231,7 +242,7 @@
     <div class="container-fluid">
         <div class="row footer">
             <div class="col-md-4 col-md-offset-1">
-                <h2 id="contact-form">ZAMÓW</h2>
+                <h2 id="contact-form">FORMULARZ KONTAKTOWY</h2>
                 <form>
                     <div>
                         <label for="fname">Imie</label><i class="glyphicon glyphicon-info-sign info"></i>
@@ -282,10 +293,12 @@
                         <input type="text" id="country" name="country" placeholder="kraj..." pattern="[A-Za-z]{3,}" required>
                     </div>
                     <div>
-                        <label for="subject">Zamówienie</label>
-                        <textarea required readonly id="subject" name="subject" placeholder="koszyk jest pusty!! :(" style="height:200px"></textarea>
-                        <label for="comment">Komentarz</label>
-                        <textarea id="comment" name="comment" placeholder="dodaj komentarz do zamówienia" style="max-height: 50px"></textarea>
+                        <label for="subject">Wiadomość</label><i class="glyphicon glyphicon-info-sign info"></i>
+                        <div class="alert alert-info">
+                            <div class="info-text"><strong>Info!</strong> napisz wiadomość do sprzedawcy</div>
+                            <div class="close-info"><span>×</span></div>
+                        </div>
+                        <textarea required id="subject" name="subject" placeholder="napisz wiadomość..." style="height:200px"></textarea>
                     </div>
                     <input type="submit" value="Submit">
                 </form>

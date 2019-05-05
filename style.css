@@ -77,6 +77,9 @@ h1{
     background-color: black !important;
     border-color: #EFF1FB !important;
 }
+.add-button:hover{
+    box-shadow: black -1px 1px 11px 6px;
+}
 .product-description{
     display: none;
 }
